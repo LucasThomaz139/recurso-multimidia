@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <title>Electro - HTML Ecommerce Template</title>
+
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+        <!-- Slick -->
+        <link type="text/css" rel="stylesheet" href="css/slick.css"/>
+        <link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+        <!-- nouislider -->
+        <link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+        <!-- Font Awesome Icon -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <!-- Custom stlylesheet -->
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link href="css/all.min.css" rel="stylesheet">
+         <link href="css/owl.carousel.min.css" rel="stylesheet">
+    </head>
+    <body id="culit">
+        <!-- HEADER -->
+        <header>
+            <!-- TOP HEADER -->
+            <div id="top-header">
+                <nav id="navigation">
+            <!-- container -->
+            <div class="container">
+                <!-- responsive-nav -->
+                <div id="responsive-nav">
+                    <!-- NAV -->
+                    <ul class="main-nav nav navbar-nav">
+                        <li ><a href="index.html">Nigéria</a></li>
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="cultura.html">Cultura</a></li>
+                        <li><a href="dados.html">Dados</a></li>
+                        <li><a href="personalidade.html">Personalidade</a></li>
+                        <li><a href="turismo.html">Turismo</a></li>
+                        <li><a href="culinaria.html">Culinária</a></li>
+
+                    </ul>
+                    <!-- /NAV -->
+                </div>
+                <!-- /responsive-nav -->
+            </div>
+            <!-- /container -->
+        </nav>
+            </div>
+            <!-- /TOP HEADER -->
+
+            <!-- MAIN HEADER -->
+            
+            <!-- /MAIN HEADER -->
+        </header>
+        <div class="tudo">
+        <section id="religiao">
+            <h4>Religião</h4>
+            <table>
+                <tr>
+                    <th>Religião</th>
+                    <th>Ano</th>
+                    <th>Numero de adeptos( Com base em levantamento de 2013, 148m.pop)</th>
+                    <th>Percentagem da População Total</th>
+                </tr>
+                <tr>
+                    <td>Cristianismo </td>
+                    <td>2013 </td>
+                    <td>75 740 000 </td>
+                    <td>40.5% </td>
+                </tr>
+                <tr>
+                    <td>Islamismo</td>
+                    <td>2013 </td>
+                    <td>85 336 000</td>
+                    <td>51.2%</td>
+                </tr>
+                <tr>
+                    <td>Outras </td>
+                    <td>2013 </td>
+                    <td>4 000 000</td>
+                    <td>2.4% </td>
+                </tr>
+            </table>
+        </section>
+        <section id="danca">
+            <h4>Danças</h4>
+            <video poster="img/dances.png" id="midia">
+                <source id="danc" src="midia/dance.mp4" type="video/mp4">
+
+
+            </video>
+            <div id="um">
+            <button onclick="voltar()" class="um"><i class="fas fa-angle-double-left"></i></button>
+            <button onclick="play()" class="um"><i class="fas fa-play-circle"></i></button>
+            <button onclick="display()" class="um"><i class="fas fa-pause-circle"></i></button>
+            <button onclick="pass()" class="um"><i class="fas fa-angle-double-right"></i></button>
+            <button onclick="stop()" class="um"><i class="fas fa-stop-circle"></i></button>
+            <input type="range" id="tempo" value="0"/>
+            <span id="tempo_valor"></span>
+            <button onclick="mutar()"class="um"><i class="fas fa-volume-mute"></i></button >
+            <input id="volumeVideo"  type="range"  min="0" max = "1" step="0.01" value="0.5" onchange="volume()">
+            <span id="vv"></span>
+            <button id="icone" onclick="telaCheia()" class="um"><i class="fas fa-compress"></i></button>
+            </div>
+        </section>
+        <section id="musica">
+            <h4>Músicas</h4>
+            <audio id="au"> 
+                <source src="midia/musica.mp3" type="audio/mpeg">
+            </audio>
+            <span id="botao">
+                <button onclick="voltou()" class="dois"><i class="fas fa-angle-double-left"></i></button>
+                <button onclick="player()" class="dois" ><i class="fas fa-play-circle"></i></button>
+                <button onclick="para()" class="dois" ><i class="fas fa-pause-circle"></i></button>
+                <button onclick="passou()" class="dois"><i class="fas fa-angle-double-right"></i></button>
+                <button onclick="terminar()" class="dois" ><i class="fas fa-stop-circle"></i></button>
+                <input type="range" id="temp" value="0"/>
+                <span id="tempovalores"></span>
+                <button onclick="mudo()" class="dois"><i class="fas fa-volume-mute"></i></button >
+                <input id="volumeaudio"  type="range"  min="0" max = "1" step="0.01" value="0.5" onchange="volumeaud()">
+                <span id="vaaudio"></span>
+            </span>
+        </section>
+
+        <footer id="footer">
+            <div class="pfo">
+                <p>Lucas Thomaz</p>
+                <p>2019</p>
+            </div>
+        </footer></div>
+        <!-- /FOOTER -->
+
+        <!-- jQuery Plugins -->
+        <script src="js/jquery.min.js"></script>
+        <script src='js/owl.carousel.min.js' type="text/javascript"></script>
+        <script src= 'js/script.js' type='text/javascript'></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/nouislider.min.js"></script>
+        <script src="js/jquery.zoom.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
